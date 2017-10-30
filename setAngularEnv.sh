@@ -17,7 +17,8 @@ read -p "Please Enter Projec\\Repository Name: " f
 sudo apt-get install curl
 sudo apt-get install python-software-properties
 sudo curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs
+sudo apt-get install -y npm
 sudo npm install -g @angular/cli@latest
 cd
 mkdir Git
@@ -40,7 +41,7 @@ sudo apt-get install git;;
 sudo apt-get install python-software-properties
 sudo curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
-sudo apt-get install -y build-essential
+sudo apt-get install -y npm
 sudo npm install -g @angular/cli@latest;;
 "4")sudo apt-get install curl
 sudo curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
