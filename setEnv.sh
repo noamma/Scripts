@@ -23,8 +23,9 @@ sudo npm install -g @angular/cli@latest
 cd ~
 mkdir Git
 mkdir  ~/Git/AngularJS
+cd ~/Git/AngularJS
 mkdir $f
-cd ~/Git/AngularJS/$f
+cd ./$f
 sudo ng new $f
 sudo curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
@@ -52,6 +53,6 @@ sudo apt  install code;;
 "5")read -p "Please Enter Project\\Repository Name: " f
 cd ~/Git/AngularJS
 mkdir $f
-cd ~/Git/AngularJS/$f
+cd ./$f
 sudo ng new $f;;esac
 
