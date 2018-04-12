@@ -7,7 +7,7 @@ echo "1. install Angular Environment from scratch (git , nodejs, angular cli, vs
 echo "2. install only git"
 echo "3. install only angular cli"
 echo "4. install only vscode"
-echo "5. only create new AngularJS Project"
+echo "5. only create new Angular Project"
 echo ""
 read -p  "enter your choise number: " ch
 echo $ch
@@ -22,8 +22,8 @@ sudo apt-get install -y npm
 sudo npm install -g @angular/cli@latest
 cd ~
 mkdir Git
-mkdir  ~/Git/AngularJS
-cd ~/Git/AngularJS
+mkdir  ~/Git/Angular
+cd ~/Git/Angular
 mkdir $f
 cd ./$f
 sudo ng new $f
@@ -51,7 +51,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo apt update
 sudo apt  install code;;
 "5")read -p "Please Enter Project\\Repository Name: " f
-cd ~/Git/AngularJS
+cd ~/Git/Angular
 mkdir $f
 cd ./$f
 sudo ng new $f;;esac
